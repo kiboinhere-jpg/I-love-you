@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aku Sayang Kamu Cantikku</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Landing Screen QR -->
+        <div id="landing-screen" class="landing-screen">
+            <div class="qr-box" id="qr-entry">
+                <img src="qr.png" alt="Scan QR" onerror="this.src='https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=I+Love+You'">
+            </div>
+            <div class="scan-text">SCAN ME ❤️</div>
+            <div style="margin-top: 10px; color: #ff007f; font-size: 0.75rem; opacity: 0.8;">(Klik QR untuk mulai)</div>
+        </div>
+
+        <!-- Falling Hearts & Text Container -->
+        <div id="hearts-container"></div>
+
+        <!-- Music Element -->
+        <audio id="bg-music" loop>
+            <source src="musik.mp3" type="audio/mpeg">
+            <source src="music.mp3" type="audio/mpeg">
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
